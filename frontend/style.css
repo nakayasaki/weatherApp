@@ -1,0 +1,30 @@
+#result {
+  max-width: 500px;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.forecast-day {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.forecast-day h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.forecast-day p {
+  margin: 4px 0;
+  font-size: 0.95em;
+}
+
+#dogImg {
+  margin-top: 12px;
+}

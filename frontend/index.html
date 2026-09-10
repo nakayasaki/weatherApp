@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>今日・明日の天気</title>
+</head>
+<body>
+  <h1>今日・明日の天気</h1>
+  <div id="citySelection">
+    <label>
+      <input type="radio" name="city" value="Tokyo" > 東京
+    </label>
+    <label>
+      <input type="radio" name="city" value="Nagoya"checked> 名古屋
+    </label>
+    <label>
+      <input type="radio" name="city" value="Osaka"> 大阪
+    </label>
+  </div>
+  <button id="forecastBtn">天気を表示</button>
+
+  
+  <div id="weatherResult"></div>
+  <div id="dogImg" class="dog-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
