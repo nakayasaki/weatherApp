@@ -47,9 +47,9 @@ app.get("/forecast", async (req, res) => {
     res.json({ city: data.city.name, forecast: forecastByDay });
 
   } catch (err) {
-    console.error("Fetchエラー:", err);
-    res.status(500).json({ error: "天気情報の取得に失敗しました" });
-  }
+  console.error("Fetchエラー:", err);
+  res.status(500).json({ error: err.message });
+}
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
