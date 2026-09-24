@@ -16,7 +16,10 @@ app.get("/forecast", async (req, res) => {
   try {
     //API接続してjsonで帰ってくる
     const response = await fetch(url);
-    if (!response.ok) throw new Error("APIリクエスト失敗");
+    if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`APIリクエスト失敗: ${response.status} ${errorText}`);
+  }
     const data = await response.json();
 
     //今日と明日の文字列を作る
